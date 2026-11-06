@@ -1,13 +1,53 @@
 ### Hi, I'm Akif 👋
 
-Mobile developer in Malaysia. I build Android apps in Kotlin and Java in production, and Flutter,
-Kotlin Multiplatform and SwiftUI apps on the side, mostly offline-first apps for Malaysian users.
+Mobile developer in Malaysia. Android (Kotlin and Java) in production, plus Flutter, Kotlin Multiplatform and
+SwiftUI apps of my own, mostly offline-first apps for Malaysian users.
 
-**Work:** Android developer on [TheNoor](https://play.google.com/store/apps/details?id=com.thenoor.app), a Muslim lifestyle
-and worship app: Quran reading and audio, prayer times and azan notifications, donations and commerce, a car head-unit
-app, and a Wear OS companion. Day to day that means background reliability (WorkManager, foreground services,
-alarms), media playback, Firebase Cloud Messaging and deep links, crash and null-safety fixes, and an ongoing Java →
-Kotlin migration.
+**Now:** Android developer on [TheNoor](https://play.google.com/store/apps/details?id=com.thenoor.app), a Muslim
+lifestyle and worship app (Quran reading and audio, prayer times and azan alerts, donations and commerce), its car
+head-unit app and a Wear OS companion. Main author of the current Android codebase (550+ commits).
+
+---
+
+### Architecture and state management I've used
+
+| Where | Architecture | State / data |
+|---|---|---|
+| TheNoor Android (production) | Activities/Fragments, ViewModel, central deep-link router (IntentRouter/IntentRegistry), ongoing Java → Kotlin migration | LiveData, Kotlin Coroutines, WorkManager, foreground services, Volley, SharedPreferences, Firebase Cloud Messaging |
+| TheNoor Car (production) | MVVM with Hilt dependency injection | ViewModel, Coroutines, Room |
+| Flutter apps (Go Coffee, ServiceBiz) | Feature folders, repository pattern behind interfaces, offline-first | Riverpod (Notifier / AsyncNotifier), go_router, Drift and sqflite (SQLite) |
+| Kotlin Multiplatform apps (SplitBill, ResitKu, MoewKita, Cerita Nusantara) | Shared domain and data in `commonMain`, Compose Multiplatform UI, `expect`/`actual` for platform code | Compose state and StateFlow (ViewModel in Cerita Nusantara), SQLDelight / SQLite |
+| Native Android apps (Banjir Sepang, Layar Kita, HurufPlay, Coway Remote) | Jetpack Compose, single activity | ViewModel, StateFlow / Compose state, AndroidX Media3 |
+| iOS (Banjir Sepang, TheNoor Quran features) | SwiftUI | Swift concurrency |
+
+### Automated testing
+
+- **TheNoor Android:** wrote most of its unit test suite (69 test files, 213 tests) with JUnit and Robolectric;
+  Espresso set up for UI tests.
+- **Kotlin Multiplatform:** shared `commonTest` unit tests with kotlin.test (bill-splitting maths, Malaysian receipt
+  parsing, cat-photo matching).
+- **Flutter:** unit tests (pricing, cart totals, vouchers, rewards, receipt layout) and widget tests (menu, product
+  options to cart, checkout validation).
+
+### CI/CD
+
+- **GitHub Actions, TheNoor Android (I wrote it):** on every push and pull request it checks resources (XML,
+  duplicates, translation placeholders), builds, runs lint and unit tests; it also builds a signed release
+  `.aab` when the signing secrets are present.
+- **GitHub Actions, personal apps (HurufPlay, Layar Kita):** unit tests, lint and a debug APK on every push, with
+  the APK and the test/lint reports uploaded as build artifacts.
+- **Monitoring:** Firebase Crashlytics and Performance Monitoring in the TheNoor apps; BigQuery exports for usage
+  and crash analysis.
+
+### Work highlights at TheNoor
+
+- Made azan (prayer-time) alerts reliable: fixed missed and stale alarms and added a WorkManager watchdog and a health
+  log to catch failures.
+- Built an offline fallback for the muezzin audio after the API started returning broken data.
+- Quran module: offline playback, media notifications, verse highlight sync, Mushaf ayah highlighting, dark mode.
+- Crash fixes across the main screens: fragment transactions after state save, JSON parsing, null safety,
+  Geocoder moved off the main thread.
+- Fixed a multi-layer location bug ("Earth, Unknown") with a three-step GPS fallback.
 
 ---
 
@@ -15,26 +55,24 @@ Kotlin migration.
 
 | Project | What it is | Stack |
 |---|---|---|
-| **Go Coffee** | Order-ahead app for a Malaysian coffee shop, plus a staff app that receives orders over the shop Wi-Fi, switches items sold out, shows the day's sales and prints receipts on a Sunmi V2 | Flutter, Riverpod, go_router, Drift/SQLite, local HTTP server, Sunmi printer |
-| **SplitBill** | Snap a restaurant receipt, split it between friends with tax, send each person their amount on WhatsApp | Kotlin Multiplatform, Compose Multiplatform, ML Kit / Apple Vision OCR |
-| **ResitKu** | Receipt keeper for spending and LHDN tax-relief claims; reads receipts on the phone, no internet | Kotlin Multiplatform, Compose Multiplatform, SQLite, on-device OCR |
-| **ServiceBiz** | Run an aircon service business: customers, units, bookings, quotations, invoices, WhatsApp follow-ups | Flutter, Riverpod, go_router, sqflite, repository layer for a future Supabase backend |
-| **Banjir Sepang** | Flood watch for Sepang: river levels, gauges, sirens, rainfall, CCTV and alerts when water near you rises | Kotlin (Android) and Swift/SwiftUI (iOS) |
-| **Layar Kita** | Malaysian TV and radio player with background radio, car mode and Android Auto | Kotlin, AndroidX Media3 |
+| **Go Coffee** | Order-ahead app for a Malaysian coffee shop, plus a staff app that receives orders over the shop Wi-Fi, marks items sold out, shows the day's sales and prints receipts on a Sunmi V2 | Flutter, Riverpod, Drift, local HTTP server, Android foreground service, Sunmi printer |
+| **SplitBill** | Snap a restaurant receipt, split it with tax, send each person their amount on WhatsApp | Kotlin Multiplatform, Compose Multiplatform, ML Kit / Apple Vision OCR |
+| **ResitKu** | Receipt keeper for spending and LHDN tax-relief claims, read on the phone with no internet | Kotlin Multiplatform, Compose Multiplatform, SQLite, on-device OCR |
+| **ServiceBiz** | Run an aircon service business: customers, units, bookings, quotations, invoices, WhatsApp follow-ups | Flutter, Riverpod, go_router, sqflite |
+| **Banjir Sepang** | Flood watch for Sepang: river levels, gauges, sirens, rainfall, CCTV, alerts when water near you rises | Kotlin + Compose (Android), Swift + SwiftUI (iOS) |
+| **Layar Kita** | Malaysian TV and radio player with background radio, car mode and Android Auto | Kotlin, Compose, AndroidX Media3, GitHub Actions |
 | **Cerita Nusantara** | Offline read-aloud storybook of Malaysian folklore for kids, phones and tablets | Kotlin Multiplatform, Compose Multiplatform |
-| **MoewKita** | Get to know the stray cats in your taman: profiles, photo galleries, comments, a cat scanner | Kotlin Multiplatform, SQLDelight |
-| **HurufPlay** | Kids practise writing A–Z and draw freely, with Malay prompts | Kotlin (Android) |
-| **Coway Aircond Remote** | Turns a phone with an IR blaster into a remote for Coway inverter air conditioners | Kotlin (Android), ConsumerIrManager |
+| **MoewKita** | Get to know the stray cats in your taman: profiles, photos, comments, a cat scanner | Kotlin Multiplatform, SQLDelight |
+| **HurufPlay** | Kids practise writing A–Z and draw freely, with Malay prompts | Kotlin, Compose, GitHub Actions |
+| **Coway Aircond Remote** | Turns a phone with an IR blaster into a remote for Coway inverter air conditioners | Kotlin, Compose, ConsumerIrManager |
 
 Most of these repos are private. Happy to share access or a live demo on request.
 
----
-
-### Tools I use
+### Tools
 
 - **Languages:** Kotlin · Java · Dart · Swift
-- **Android:** Jetpack Compose · XML views · WorkManager · foreground services · Media3 · Volley · Firebase Cloud Messaging
+- **Android:** Jetpack Compose · XML views · Hilt · Room · WorkManager · Media3 · Coroutines · Firebase (FCM, Crashlytics, Performance)
 - **Cross-platform:** Flutter (Riverpod, go_router, Drift) · Kotlin Multiplatform + Compose Multiplatform (SQLDelight)
 - **iOS:** SwiftUI · Xcode
-- **Testing:** Flutter unit and widget tests · Kotlin Multiplatform unit tests (kotlin.test)
-- **Other:** Git / GitHub · Android Studio · Sunmi POS printing
+- **Testing:** JUnit · Robolectric · Espresso · kotlin.test · flutter_test
+- **CI/CD and tooling:** GitHub Actions · Gradle · signed AAB builds · Android lint · Git / GitHub · Android Studio
