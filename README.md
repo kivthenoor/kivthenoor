@@ -5,7 +5,30 @@ SwiftUI apps of my own, mostly offline-first apps for Malaysian users.
 
 **Now:** Android developer on [TheNoor](https://play.google.com/store/apps/details?id=com.thenoor.app), a Muslim
 lifestyle and worship app (Quran reading and audio, prayer times and azan alerts, donations and commerce), its car
-head-unit app and a Wear OS companion. Main author of the current Android codebase (550+ commits).
+head-unit app and a Wear OS companion. Main author of the current Android codebase (590+ commits).
+
+Earlier work and most of my TheNoor history (2022–2025) is on my previous account,
+[@kivfauzi](https://github.com/kivfauzi).
+
+---
+
+### Progress
+
+About 940 commits across TheNoor's Android, iOS, car and SDK repos since May 2024, plus 11 personal apps.
+
+| When | Milestone |
+|---|---|
+| 2022 | First Kotlin Android apps (QuizAppKotlin) on [@kivfauzi](https://github.com/kivfauzi) |
+| 2023 | Android UI practice projects (calendar and schedule app UI) |
+| Feb 2024 | MarketingApps (Android) |
+| May 2024 | Joined TheNoor: Android app (Java), 180+ commits in its first codebase |
+| Sep 2024 | TheNoor Car, the in-car head-unit app (MVVM, Hilt, Room) |
+| Feb 2025 | Started contributing to TheNoor iOS |
+| Aug 2025 | TheNoor Android Kotlin project |
+| Oct 2025 | TheNoor Pro Android codebase: main author (590+ commits), GitHub Actions CI, 200+ unit tests |
+| Jul 2026 | SolatSDK, a Swift package for prayer times used by the iOS app |
+| Oct 2026 | TheNoor admin/monitoring app, Wear OS companion, iOS Quran parity |
+| Oct–Nov 2026 | Personal apps: Kotlin Multiplatform (SplitBill, ResitKu, MoewKita, Cerita Nusantara), native Android and iOS (Banjir Sepang, Layar Kita, HurufPlay, Coway Remote), Flutter (ServiceBiz, Go Coffee + staff app) |
 
 ---
 
