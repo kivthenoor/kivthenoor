@@ -1,14 +1,16 @@
 <h1 align="center">Hi, I'm Akif 👋</h1>
 
 <p align="center">
-  <b>Mobile developer in Malaysia</b> · Android (Kotlin and Java) in production · Flutter, Kotlin Multiplatform,
+  <b>Mobile developer in Malaysia since 2018</b> · Android (Kotlin and Java) in production · Flutter, Kotlin Multiplatform,
   SwiftUI and React Native apps of my own, mostly offline-first apps for Malaysian users.
 </p>
 
 <p align="center">
   <a href="https://play.google.com/store/apps/details?id=com.thenoor.app"><img src="https://img.shields.io/badge/Now%20at-TheNoor-0E7C66?style=flat-square&logo=googleplay&logoColor=white" alt="Now at TheNoor" /></a>
   <img src="https://img.shields.io/badge/Based%20in-Malaysia-CC0001?style=flat-square" alt="Based in Malaysia" />
+  <img src="https://img.shields.io/badge/Mobile%20dev%20since-2018-3DDC84?style=flat-square&logo=android&logoColor=white" alt="Mobile developer since 2018" />
   <a href="https://github.com/kivfauzi"><img src="https://img.shields.io/badge/Earlier%20work-%40kivfauzi-24292F?style=flat-square&logo=github&logoColor=white" alt="Earlier work on @kivfauzi" /></a>
+  <a href="https://buymeacoffee.com/kiv_fauzi"><img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-kiv__fauzi-FFDD00?style=flat-square&logo=buymeacoffee&logoColor=black" alt="Buy me a coffee" /></a>
 </p>
 
 ---
@@ -50,15 +52,49 @@ head-unit app and a Wear OS companion. Main author of the current Android codeba
 Earlier work and most of my TheNoor history (2022–2025) is on my previous account,
 [@kivfauzi](https://github.com/kivfauzi).
 
+### 💼 Experience and the apps I've built
+
+| When | Where | Apps |
+|---|---|---|
+| May 2024 – now | **TheNoor**, Android developer | TheNoor (Android and iOS), TheNoor Pro Android, TheNoor Car head unit, Wear OS companion, admin and monitoring app, SolatSDK |
+| Jan 2023 – Jun 2023 | **Ocunapse Sdn Bhd**, Kuala Lumpur · Software Engineer | Qrunch and Aplicondo (native Android); websites for Anymeta-global, Ocunapse and Aptrasco Global (React.js, Node.js, Express.js) |
+| Jul 2021 – Dec 2022 | **MCM Bizporter Sdn Bhd**, Kuala Lumpur · Software Engineer | Uncle Don's (delivery app) and Uncle Don's Admin (stock and orders), Bizporter O2O customer and admin apps, Abobacha Admin |
+| Feb 2018 – Jun 2021 | **TimeTec Computing Sdn Bhd**, Cyberjaya · Mobile Application Developer | i-Neighbour, i-Neighbour D, Pruksa Smart Guard, i-Vizit, TimeTec VMS, IOI Community, i-PJH |
+
+<details>
+<summary><b>What I did in each role</b></summary>
+
+**TimeTec (2018–2021).** Designed, developed and published seven Android apps for community and visitor management.
+- **i-Neighbour:** maintained it and added booking, invitation and visitation, discussion and account features.
+- **i-Neighbour D:** lets property developers manage residences when units are handed over to owners; built and maintained new features.
+- **Pruksa Smart Guard:** a white-label version of i-Neighbour for a client company in Thailand, built from the i-Neighbour project.
+- **i-Vizit and TimeTec VMS:** visitor management that runs on guardhouse and reception tablets.
+- **IOI Community** and **i-PJH:** community apps; maintained them and improved performance.
+- Integrated REST APIs, third-party SDKs and IoT devices, fixed complex bugs, reviewed code and shipped UI/UX changes.
+
+**MCM Bizporter (2021–2022).** Built the Uncle Don's and Bizporter O2O customer and admin apps in native Android and
+React Native, alongside React.js web work.
+- Payments with iPay88, notifications with OneSignal, REST and OpenID services.
+- Sunmi V2 devices for payments, receipt printing and QR scanning in merchant workflows.
+- Released to Google Play, Huawei AppGallery and the Apple App Store.
+
+**Ocunapse (2023).** Delivered the Qrunch and Aplicondo Android apps, and built React.js websites with Node.js and
+Express.js backends on MySQL, MongoDB, Strapi and Firestore.
+
+</details>
+
 ---
 
 ### 📈 Progress
 
-About 940 commits across TheNoor's Android, iOS, car and SDK repos since May 2024, plus 12 personal apps.
+Mobile apps since 2018. About 940 commits across TheNoor's Android, iOS, car and SDK repos since May 2024, plus 14 personal apps.
 
 | When | Milestone |
 |---|---|
+| Feb 2018 | Started as a mobile application developer at TimeTec: i-Neighbour, i-Vizit, IOI Community and four more Android apps |
+| Jul 2021 | MCM Bizporter: Uncle Don's and Bizporter O2O apps in native Android and React Native, iPay88 and Sunmi V2 |
 | 2022 | First Kotlin Android apps (QuizAppKotlin) on [@kivfauzi](https://github.com/kivfauzi) |
+| Jan 2023 | Ocunapse: Qrunch and Aplicondo Android apps, React.js and Node.js websites |
 | 2023 | Android UI practice projects (calendar and schedule app UI) |
 | Feb 2024 | MarketingApps (Android) |
 | May 2024 | Joined TheNoor: Android app (Java), 180+ commits in its first codebase |
@@ -70,6 +106,7 @@ About 940 commits across TheNoor's Android, iOS, car and SDK repos since May 202
 | Oct 2026 | TheNoor admin/monitoring app, Wear OS companion, iOS Quran parity |
 | Oct–Nov 2026 | Personal apps: Kotlin Multiplatform (SplitBill, ResitKu, MoewKita, Cerita Nusantara), native Android and iOS (Banjir Sepang, Layar Kita, HurufPlay, Coway Remote), Flutter (ServiceBiz, Go Coffee + staff app) |
 | Nov 2026 | First React Native app: StudyNest (Expo, TypeScript, SQLite) |
+| Nov 2026 | Prompt Vault and Attendance Kita (Kotlin, Compose, Room) |
 
 ---
 
@@ -132,6 +169,8 @@ About 940 commits across TheNoor's Android, iOS, car and SDK repos since May 202
 | **Cerita Nusantara** | Offline read-aloud storybook of Malaysian folklore for kids, phones and tablets | Kotlin Multiplatform, Compose Multiplatform |
 | **MoewKita** | Get to know the stray cats in your taman: profiles, photos, comments, a cat scanner | Kotlin Multiplatform, SQLDelight |
 | **HurufPlay** | Kids practise writing A–Z and draw freely, with Malay prompts | Kotlin, Compose, GitHub Actions |
+| **Prompt Vault** | Save AI prompts on the phone, mark favourites, attach a UI image, then copy or share in one tap | Kotlin, Compose, Room (SQLite) |
+| **Attendance Kita** | Staff clock-in and clock-out with geofenced sites, shifts, leave requests and CSV reports | Kotlin, Compose, Hilt, Room, WorkManager |
 | **Coway Aircond Remote** | Turns a phone with an IR blaster into a remote for Coway inverter air conditioners | Kotlin, Compose, ConsumerIrManager |
 
 Most of these repos are private. Happy to share access or a live demo on request.
@@ -144,3 +183,11 @@ Most of these repos are private. Happy to share access or a live demo on request
 - **iOS:** SwiftUI · Xcode
 - **Testing:** JUnit · Robolectric · Espresso · kotlin.test · flutter_test · Vitest
 - **CI/CD and tooling:** GitHub Actions · Gradle · signed AAB builds · Android lint · Git / GitHub · Android Studio
+
+---
+
+### ☕ Support my work
+
+If my apps or code help you, you can [buy me a coffee](https://buymeacoffee.com/kiv_fauzi).
+
+<a href="https://buymeacoffee.com/kiv_fauzi"><img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-kiv__fauzi-FFDD00?style=for-the-badge&logo=buymeacoffee&logoColor=black" alt="Buy me a coffee" /></a>
