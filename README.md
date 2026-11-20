@@ -1,8 +1,9 @@
 <h1 align="center">Hi, I'm Akif 👋</h1>
 
 <p align="center">
-  <b>Mobile developer in Malaysia since 2018</b> · Android (Kotlin and Java) in production · Flutter, Kotlin Multiplatform,
-  SwiftUI and React Native apps of my own, mostly offline-first apps for Malaysian users.
+  <b>Mobile Apps Lead in Malaysia, building mobile apps since 2018</b> · Android (Kotlin and Java), iOS and Huawei in
+  production · React Native and Expo at The Next Six · Flutter, Kotlin Multiplatform and SwiftUI apps of my own, mostly
+  offline-first apps for Malaysian users.
 </p>
 
 <p align="center">
@@ -45,7 +46,7 @@
 
 ### 🧭 What I'm working on
 
-**Now:** Android developer on [TheNoor](https://play.google.com/store/apps/details?id=com.thenoor.app), a Muslim
+**Now:** Mobile Apps Lead at Noor Luminous on [TheNoor](https://play.google.com/store/apps/details?id=com.thenoor.app), a Muslim
 lifestyle and worship app (Quran reading and audio, prayer times and azan alerts, donations and commerce), its car
 head-unit app and a Wear OS companion. Main author of the current Android codebase (670+ commits). Lately: a
 hafazan test in the Mushaf that checks your recitation word by word, an eBook module for classical Jawi kitab, and
@@ -58,7 +59,8 @@ Earlier work and most of my TheNoor history (2022–2025) is on my previous acco
 
 | When | Where | Apps |
 |---|---|---|
-| May 2024 – now | **TheNoor**, Android developer | TheNoor (Android and iOS), TheNoor Pro Android, TheNoor Car head unit, Wear OS companion, admin and monitoring app, SolatSDK |
+| May 2024 – now | **Noor Luminous · TheNoor**, Mobile Apps Lead (promoted from Senior Android Developer) | TheNoor (Android, iOS and Huawei), TheNoor Pro Android, TheNoor Car head unit, Wear OS companion, admin and monitoring app, SolatSDK |
+| Jul 2023 – May 2024 | **The Next Six Sdn Bhd** · Mobile Developer | Nextsix, Nextsix Agent and Nextsix Merchant (React Native and Expo), plus their Huawei versions |
 | Jan 2023 – Jun 2023 | **Ocunapse Sdn Bhd**, Kuala Lumpur · Software Engineer | Qrunch and Aplicondo (native Android); websites for Anymeta-global, Ocunapse and Aptrasco Global (React.js, Node.js, Express.js) |
 | Jul 2021 – Dec 2022 | **MCM Bizporter Sdn Bhd**, Kuala Lumpur · Software Engineer | Uncle Don's (delivery app) and Uncle Don's Admin (stock and orders), Bizporter O2O customer and admin apps, Abobacha Admin |
 | Feb 2018 – Jun 2021 | **TimeTec Computing Sdn Bhd**, Cyberjaya · Mobile Application Developer | i-Neighbour, i-Neighbour D, Pruksa Smart Guard, i-Vizit, TimeTec VMS, IOI Community, i-PJH |
@@ -80,6 +82,16 @@ React Native, alongside React.js web work.
 - Sunmi V2 devices for payments, receipt printing and QR scanning in merchant workflows.
 - Released to Google Play, Huawei AppGallery and the Apple App Store.
 
+**TheNoor (2024–now).** Own Android, iOS and Huawei delivery; promoted from Senior Android Developer to Mobile Apps Lead.
+- Coordinate external iOS engineers, code reviews and release follow-up.
+- Mentored an intern who was then hired as a full-time Android developer.
+
+**The Next Six (2023–2024).** Built the Nextsix property platform apps: Nextsix, Nextsix Agent and Nextsix Merchant.
+- React Native and Expo, from design and implementation to testing and debugging.
+- Huawei versions with React Native CLI and HMS Core location, maps and push notifications.
+- Over-the-air updates with Expo Updates and App Center, so supported fixes reached users without a store download.
+- Released to Google Play, the Apple App Store and Huawei AppGallery.
+
 **Ocunapse (2023).** Delivered the Qrunch and Aplicondo Android apps, and built React.js websites with Node.js and
 Express.js backends on MySQL, MongoDB, Strapi and Firestore.
 
@@ -97,9 +109,10 @@ Mobile apps since 2018. 1,000+ commits across TheNoor's Android, iOS, car and SD
 | Jul 2021 | MCM Bizporter: Uncle Don's and Bizporter O2O apps in native Android and React Native, iPay88 and Sunmi V2 |
 | 2022 | First Kotlin Android apps (QuizAppKotlin) on [@kivfauzi](https://github.com/kivfauzi) |
 | Jan 2023 | Ocunapse: Qrunch and Aplicondo Android apps, React.js and Node.js websites |
+| Jul 2023 | The Next Six: Nextsix, Nextsix Agent and Nextsix Merchant in React Native and Expo, Huawei builds with HMS Core, OTA updates |
 | 2023 | Android UI practice projects (calendar and schedule app UI) |
 | Feb 2024 | MarketingApps (Android) |
-| May 2024 | Joined TheNoor: Android app (Java), 180+ commits in its first codebase |
+| May 2024 | Joined TheNoor as Senior Android Developer: Android app (Java), 180+ commits in its first codebase; later promoted to Mobile Apps Lead |
 | Sep 2024 | TheNoor Car, the in-car head-unit app (MVVM, Hilt, Room) |
 | Feb 2025 | Started contributing to TheNoor iOS |
 | Aug 2025 | TheNoor Android Kotlin project |
@@ -107,9 +120,9 @@ Mobile apps since 2018. 1,000+ commits across TheNoor's Android, iOS, car and SD
 | Jul 2026 | SolatSDK, a Swift package for prayer times used by the iOS app |
 | Oct 2026 | TheNoor admin/monitoring app, Wear OS companion, iOS Quran parity |
 | Oct–Nov 2026 | Personal apps: Kotlin Multiplatform (SplitBill, ResitKu, MoewKita, Cerita Nusantara), native Android and iOS (SepangKita, Layar Kita, HurufPlay, Coway Remote), Flutter (ServiceBiz, Go Coffee + staff app) |
-| Nov 2026 | First React Native app: StudyNest (Expo, TypeScript, SQLite) |
+| Nov 2026 | StudyNest, a personal React Native app (Expo, TypeScript, SQLite) |
 | Nov 2026 | Prompt Vault and Attendance Kita (Kotlin, Compose, Room) |
-| Nov 2026 | Nextsix property app rebuild and Miso's Moonlight Garden, a cat maze game drawn with Compose Canvas |
+| Nov 2026 | Nextsix rebuilt in native Kotlin and Compose (I built the original in React Native), and Miso's Moonlight Garden, a cat maze game drawn with Compose Canvas |
 | Nov 2026 | TheNoor: two-page Mushaf with translation columns on tablets and foldables, floating Quran player, hafazan test in the Mushaf, eBook module (beta), NoorTV and Hifz Smart Checker redesigns |
 
 ---
@@ -124,6 +137,7 @@ Mobile apps since 2018. 1,000+ commits across TheNoor's Android, iOS, car and SD
 | Kotlin Multiplatform apps (SplitBill, ResitKu, MoewKita, Cerita Nusantara) | Shared domain and data in `commonMain`, Compose Multiplatform UI, `expect`/`actual` for platform code | Compose state and StateFlow (ViewModel in Cerita Nusantara), SQLDelight / SQLite |
 | Native Android apps (SepangKita, Layar Kita, HurufPlay, Coway Remote, Nextsix rebuild, Miso's Moonlight Garden) | Jetpack Compose, single activity; Compose Canvas for the game | ViewModel, StateFlow / Compose state, AndroidX Media3 |
 | iOS (SepangKita, TheNoor Quran features) | SwiftUI | Swift concurrency |
+| React Native at The Next Six (Nextsix apps) | React Native with Expo; React Native CLI for the Huawei builds | Expo Updates and App Center for over-the-air updates, HMS Core |
 | React Native (StudyNest) | Expo Router, pure domain layer separate from screens, repositories over SQL | expo-sqlite with versioned migrations, Zustand for UI state |
 
 ### ✅ Automated testing
@@ -182,7 +196,7 @@ Mobile apps since 2018. 1,000+ commits across TheNoor's Android, iOS, car and SD
 | **Prompt Vault** | Save AI prompts on the phone, mark favourites, attach a UI image, then copy or share in one tap | Kotlin, Compose, Room (SQLite) |
 | **Attendance Kita** | Staff clock-in and clock-out with geofenced sites, shifts, leave requests and CSV reports | Kotlin, Compose, Hilt, Room, WorkManager |
 | **Coway Aircond Remote** | Turns a phone with an IR blaster into a remote for Coway inverter air conditioners | Kotlin, Compose, ConsumerIrManager |
-| **Nextsix rebuild** | Portfolio rebuild of the Nextsix property app's look in native Android, with demo data | Kotlin, Jetpack Compose |
+| **Nextsix rebuild** | Native Android rebuild of the Nextsix property app I built in React Native at The Next Six, with demo data | Kotlin, Jetpack Compose |
 | **Miso's Moonlight Garden** | Guide Miso the ginger cat through a Malaysian garden maze at dusk, collecting fish treats | Kotlin, Compose Canvas (no game engine) |
 
 Most of these repos are private. Happy to share access or a live demo on request.
@@ -191,10 +205,11 @@ Most of these repos are private. Happy to share access or a live demo on request
 
 - **Languages:** Kotlin · Java · Dart · Swift · TypeScript
 - **Android:** Jetpack Compose · XML views · Hilt · Room · WorkManager · Media3 · Coroutines · Firebase (FCM, Crashlytics, Performance)
-- **Cross-platform:** Flutter (Riverpod, go_router, Drift) · Kotlin Multiplatform + Compose Multiplatform (SQLDelight) · React Native + Expo (Expo Router, expo-sqlite)
+- **Cross-platform:** React Native + Expo (Expo Router, Expo Updates, expo-sqlite) · Flutter (Riverpod, go_router, Drift) · Kotlin Multiplatform + Compose Multiplatform (SQLDelight)
+- **Huawei:** HMS Core (location, maps, push) · AppGallery releases
 - **iOS:** SwiftUI · Xcode
 - **Testing:** JUnit · Robolectric · Espresso · kotlin.test · flutter_test · Vitest
-- **CI/CD and tooling:** GitHub Actions · Gradle · signed AAB builds · Android lint · Git / GitHub · Android Studio
+- **CI/CD and tooling:** GitHub Actions · Gradle · signed AAB builds · Android lint · Expo Updates / App Center OTA · Git / GitHub · Android Studio · Xcode
 
 ---
 
