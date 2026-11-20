@@ -1,7 +1,7 @@
 <h1 align="center">Hi, I'm Akif 👋</h1>
 
 <p align="center">
-  <b>Mobile Apps Lead in Malaysia, building mobile apps since 2018</b> · Android (Kotlin and Java), iOS and Huawei in
+  <b>Mobile Apps Developer in Malaysia, building mobile apps since 2018</b> · Android (Kotlin and Java), iOS and Huawei in
   production · React Native and Expo at The Next Six · Flutter, Kotlin Multiplatform and SwiftUI apps of my own, mostly
   offline-first apps for Malaysian users.
 </p>
@@ -46,7 +46,7 @@
 
 ### 🧭 What I'm working on
 
-**Now:** Mobile Apps Lead at Noor Luminous on [TheNoor](https://play.google.com/store/apps/details?id=com.thenoor.app), a Muslim
+**Now:** Senior Mobile Apps Developer at Noor Luminous on [TheNoor](https://play.google.com/store/apps/details?id=com.thenoor.app), a Muslim
 lifestyle and worship app (Quran reading and audio, prayer times and azan alerts, donations and commerce), its car
 head-unit app and a Wear OS companion. Main author of the current Android codebase (670+ commits). Lately: a
 hafazan test in the Mushaf that checks your recitation word by word, an eBook module for classical Jawi kitab, and
@@ -59,7 +59,7 @@ Earlier work and most of my TheNoor history (2022–2025) is on my previous acco
 
 | When | Where | Apps |
 |---|---|---|
-| May 2024 – now | **Noor Luminous · TheNoor**, Mobile Apps Lead (promoted from Senior Android Developer) | TheNoor (Android, iOS and Huawei), TheNoor Pro Android, TheNoor Car head unit, Wear OS companion, admin and monitoring app, SolatSDK |
+| May 2024 – now | **Noor Luminous · TheNoor**, Senior Mobile Apps Developer | TheNoor (Android, iOS and Huawei), TheNoor Pro Android, TheNoor Car head unit, Wear OS companion, admin and monitoring app, SolatSDK |
 | Jul 2023 – May 2024 | **The Next Six Sdn Bhd** · Mobile Developer | Nextsix, Nextsix Agent and Nextsix Merchant (React Native and Expo), plus their Huawei versions |
 | Jan 2023 – Jun 2023 | **Ocunapse Sdn Bhd**, Kuala Lumpur · Software Engineer | Qrunch and Aplicondo (native Android); websites for Anymeta-global, Ocunapse and Aptrasco Global (React.js, Node.js, Express.js) |
 | Jul 2021 – Dec 2022 | **MCM Bizporter Sdn Bhd**, Kuala Lumpur · Software Engineer | Uncle Don's (delivery app) and Uncle Don's Admin (stock and orders), Bizporter O2O customer and admin apps, Abobacha Admin |
@@ -82,7 +82,7 @@ React Native, alongside React.js web work.
 - Sunmi V2 devices for payments, receipt printing and QR scanning in merchant workflows.
 - Released to Google Play, Huawei AppGallery and the Apple App Store.
 
-**TheNoor (2024–now).** Own Android, iOS and Huawei delivery; promoted from Senior Android Developer to Mobile Apps Lead.
+**TheNoor (2024–now).** Own Android, iOS and Huawei delivery; 
 - Coordinate external iOS engineers, code reviews and release follow-up.
 - Mentored an intern who was then hired as a full-time Android developer.
 
@@ -112,7 +112,7 @@ Mobile apps since 2018. 1,000+ commits across TheNoor's Android, iOS, car and SD
 | Jul 2023 | The Next Six: Nextsix, Nextsix Agent and Nextsix Merchant in React Native and Expo, Huawei builds with HMS Core, OTA updates |
 | 2023 | Android UI practice projects (calendar and schedule app UI) |
 | Feb 2024 | MarketingApps (Android) |
-| May 2024 | Joined TheNoor as Senior Android Developer: Android app (Java), 180+ commits in its first codebase; later promoted to Mobile Apps Lead |
+| May 2024 | Joined TheNoor as Senior Android Developer: Android app (Java), 180+ commits in its first codebase;  |
 | Sep 2024 | TheNoor Car, the in-car head-unit app (MVVM, Hilt, Room) |
 | Feb 2025 | Started contributing to TheNoor iOS |
 | Aug 2025 | TheNoor Android Kotlin project |
