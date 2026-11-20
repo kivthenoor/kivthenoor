@@ -47,7 +47,9 @@
 
 **Now:** Android developer on [TheNoor](https://play.google.com/store/apps/details?id=com.thenoor.app), a Muslim
 lifestyle and worship app (Quran reading and audio, prayer times and azan alerts, donations and commerce), its car
-head-unit app and a Wear OS companion. Main author of the current Android codebase (590+ commits).
+head-unit app and a Wear OS companion. Main author of the current Android codebase (670+ commits). Lately: a
+hafazan test in the Mushaf that checks your recitation word by word, an eBook module for classical Jawi kitab, and
+two-page Mushaf reading on tablets and foldables.
 
 Earlier work and most of my TheNoor history (2022–2025) is on my previous account,
 [@kivfauzi](https://github.com/kivfauzi).
@@ -87,7 +89,7 @@ Express.js backends on MySQL, MongoDB, Strapi and Firestore.
 
 ### 📈 Progress
 
-Mobile apps since 2018. About 940 commits across TheNoor's Android, iOS, car and SDK repos since May 2024, plus 14 personal apps.
+Mobile apps since 2018. 1,000+ commits across TheNoor's Android, iOS, car and SDK repos since May 2024, plus 16 personal apps.
 
 | When | Milestone |
 |---|---|
@@ -101,12 +103,14 @@ Mobile apps since 2018. About 940 commits across TheNoor's Android, iOS, car and
 | Sep 2024 | TheNoor Car, the in-car head-unit app (MVVM, Hilt, Room) |
 | Feb 2025 | Started contributing to TheNoor iOS |
 | Aug 2025 | TheNoor Android Kotlin project |
-| Oct 2025 | TheNoor Pro Android codebase: main author (590+ commits), GitHub Actions CI, 200+ unit tests |
+| Oct 2025 | TheNoor Pro Android codebase: main author (670+ commits), GitHub Actions CI, 200+ unit tests |
 | Jul 2026 | SolatSDK, a Swift package for prayer times used by the iOS app |
 | Oct 2026 | TheNoor admin/monitoring app, Wear OS companion, iOS Quran parity |
-| Oct–Nov 2026 | Personal apps: Kotlin Multiplatform (SplitBill, ResitKu, MoewKita, Cerita Nusantara), native Android and iOS (Banjir Sepang, Layar Kita, HurufPlay, Coway Remote), Flutter (ServiceBiz, Go Coffee + staff app) |
+| Oct–Nov 2026 | Personal apps: Kotlin Multiplatform (SplitBill, ResitKu, MoewKita, Cerita Nusantara), native Android and iOS (SepangKita, Layar Kita, HurufPlay, Coway Remote), Flutter (ServiceBiz, Go Coffee + staff app) |
 | Nov 2026 | First React Native app: StudyNest (Expo, TypeScript, SQLite) |
 | Nov 2026 | Prompt Vault and Attendance Kita (Kotlin, Compose, Room) |
+| Nov 2026 | Nextsix property app rebuild and Miso's Moonlight Garden, a cat maze game drawn with Compose Canvas |
+| Nov 2026 | TheNoor: two-page Mushaf with translation columns on tablets and foldables, floating Quran player, hafazan test in the Mushaf, eBook module (beta), NoorTV and Hifz Smart Checker redesigns |
 
 ---
 
@@ -118,8 +122,8 @@ Mobile apps since 2018. About 940 commits across TheNoor's Android, iOS, car and
 | TheNoor Car (production) | MVVM with Hilt dependency injection | ViewModel, Coroutines, Room |
 | Flutter apps (Go Coffee, ServiceBiz) | Feature folders, repository pattern behind interfaces, offline-first | Riverpod (Notifier / AsyncNotifier), go_router, Drift and sqflite (SQLite) |
 | Kotlin Multiplatform apps (SplitBill, ResitKu, MoewKita, Cerita Nusantara) | Shared domain and data in `commonMain`, Compose Multiplatform UI, `expect`/`actual` for platform code | Compose state and StateFlow (ViewModel in Cerita Nusantara), SQLDelight / SQLite |
-| Native Android apps (Banjir Sepang, Layar Kita, HurufPlay, Coway Remote) | Jetpack Compose, single activity | ViewModel, StateFlow / Compose state, AndroidX Media3 |
-| iOS (Banjir Sepang, TheNoor Quran features) | SwiftUI | Swift concurrency |
+| Native Android apps (SepangKita, Layar Kita, HurufPlay, Coway Remote, Nextsix rebuild, Miso's Moonlight Garden) | Jetpack Compose, single activity; Compose Canvas for the game | ViewModel, StateFlow / Compose state, AndroidX Media3 |
+| iOS (SepangKita, TheNoor Quran features) | SwiftUI | Swift concurrency |
 | React Native (StudyNest) | Expo Router, pure domain layer separate from screens, repositories over SQL | expo-sqlite with versioned migrations, Zustand for UI state |
 
 ### ✅ Automated testing
@@ -152,6 +156,12 @@ Mobile apps since 2018. About 940 commits across TheNoor's Android, iOS, car and
 - Crash fixes across the main screens: fragment transactions after state save, JSON parsing, null safety,
   Geocoder moved off the main thread.
 - Fixed a multi-layer location bug ("Earth, Unknown") with a three-step GPS fallback.
+- Hafazan test in the Mushaf: hides the ayahs on the page, listens with Android speech recognition, matches each
+  word against the real ayahs (Arabic normalisation and alignment), and records the recitation for playback.
+- eBook module (beta): a cover carousel home, a lightweight EPUB reader written from scratch (no reader library),
+  highlights, notes, a glossary of kitab terms, line spacing and light / sepia / dark pages.
+- Two-page Mushaf on tablets and foldables, with translation columns on the outer edges and a floating player you
+  can drag anywhere.
 
 ---
 
@@ -164,7 +174,7 @@ Mobile apps since 2018. About 940 commits across TheNoor's Android, iOS, car and
 | **SplitBill** | Snap a restaurant receipt, split it with tax, send each person their amount on WhatsApp | Kotlin Multiplatform, Compose Multiplatform, ML Kit / Apple Vision OCR |
 | **ResitKu** | Receipt keeper for spending and LHDN tax-relief claims, read on the phone with no internet | Kotlin Multiplatform, Compose Multiplatform, SQLite, on-device OCR |
 | **ServiceBiz** | Run an aircon service business: customers, units, bookings, quotations, invoices, WhatsApp follow-ups | Flutter, Riverpod, go_router, sqflite |
-| **Banjir Sepang** | Flood watch for Sepang: river levels, gauges, sirens, rainfall, CCTV, alerts when water near you rises | Kotlin + Compose (Android), Swift + SwiftUI (iOS) |
+| **SepangKita** | Flood watch for the Sepang community: river levels, gauges, sirens, rainfall, CCTV, alerts when water near you rises | Kotlin + Compose (Android), Swift + SwiftUI (iOS) |
 | **Layar Kita** | Malaysian TV and radio player with background radio, car mode and Android Auto | Kotlin, Compose, AndroidX Media3, GitHub Actions |
 | **Cerita Nusantara** | Offline read-aloud storybook of Malaysian folklore for kids, phones and tablets | Kotlin Multiplatform, Compose Multiplatform |
 | **MoewKita** | Get to know the stray cats in your taman: profiles, photos, comments, a cat scanner | Kotlin Multiplatform, SQLDelight |
@@ -172,6 +182,8 @@ Mobile apps since 2018. About 940 commits across TheNoor's Android, iOS, car and
 | **Prompt Vault** | Save AI prompts on the phone, mark favourites, attach a UI image, then copy or share in one tap | Kotlin, Compose, Room (SQLite) |
 | **Attendance Kita** | Staff clock-in and clock-out with geofenced sites, shifts, leave requests and CSV reports | Kotlin, Compose, Hilt, Room, WorkManager |
 | **Coway Aircond Remote** | Turns a phone with an IR blaster into a remote for Coway inverter air conditioners | Kotlin, Compose, ConsumerIrManager |
+| **Nextsix rebuild** | Portfolio rebuild of the Nextsix property app's look in native Android, with demo data | Kotlin, Jetpack Compose |
+| **Miso's Moonlight Garden** | Guide Miso the ginger cat through a Malaysian garden maze at dusk, collecting fish treats | Kotlin, Compose Canvas (no game engine) |
 
 Most of these repos are private. Happy to share access or a live demo on request.
 
